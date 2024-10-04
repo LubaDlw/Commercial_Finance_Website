@@ -8,7 +8,7 @@ d3.json(url).then(data => {
     // Extracting the relevant data
     const gdpData = data[1].map(d => ({
         year: +d.date,  // Convert year string to number
-        gdp: d.value
+        gdp: d.value / 1e9 // Convert GDP to billions by dividing by 1 billion (1e9)
     })).filter(d => d.gdp !== null); // Filter out null values
 
     // Set dimensions and margins for the graph
@@ -30,7 +30,7 @@ d3.json(url).then(data => {
         .range([0, width]);
 
     const y = d3.scaleLinear()
-        .domain([0, d3.max(gdpData, d => d.gdp)])
+        .domain([0, d3.max(gdpData, d => d.gdp)]) // Values in billions
         .range([height, 0]);
 
     // Add X axis
@@ -48,7 +48,7 @@ d3.json(url).then(data => {
 
     // Add Y axis
     svg.append("g")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y).tickFormat(d => d + "B")); // Add "B" to indicate billions
 
     // Add Y axis label
     svg.append("text")
@@ -56,7 +56,7 @@ d3.json(url).then(data => {
         .attr("transform", "rotate(-90)")  // Rotate the text vertically
         .attr("x", -height / 2)  // Center vertically
         .attr("y", -margin.left + 40)  // Position left of the Y-axis
-        .text("GDP Amount in USD")
+        .text("GDP Amount in Billions (USD)")  // Update label to reflect billions
         .attr("font-size", "14px");
 
     // Add the line
@@ -85,7 +85,7 @@ d3.json(url).then(data => {
         .on("mouseover", (event, d) => {
             tooltip
                 .style("opacity", 1)  // Show tooltip
-                .html(`Year: ${d.year}<br>GDP: ${d3.format(",.2f")(d.gdp)} USD`); // Format GDP with commas and two decimals
+                .html(`Year: ${d.year}<br>GDP: ${d3.format(",.2f")(d.gdp)} billion USD`); // Format GDP in billions
         })
         .on("mousemove", (event) => {
             tooltip
