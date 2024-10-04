@@ -372,3 +372,167 @@ footer {
         margin: 10px 0;
     }
 }
+
+
+/* Responsive Design for Smaller Screens */
+
+/* Adjust header and navigation */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%; /* Reduce container width */
+    }
+
+    #branding h1 {
+        font-size: 32px; /* Adjust heading size */
+    }
+
+    #branding p {
+        font-size: 18px; /* Adjust paragraph size */
+    }
+}
+
+/* Intro Section */
+@media (max-width: 992px) {
+    #intro h1 {
+        font-size: 36px; /* Adjust heading size for smaller screens */
+    }
+
+    #intro p {
+        font-size: 20px; /* Adjust description size */
+    }
+
+    #intro {
+        padding: 30px 0; /* Reduce padding */
+    }
+}
+
+/* Quote Section */
+@media (max-width: 768px) {
+    #quote h1 {
+        font-size: 24px; /* Adjust quote heading size */
+    }
+
+    #quote p {
+        font-size: 16px; /* Adjust quote paragraph size */
+    }
+
+    #quote {
+        height: auto; /* Allow dynamic height */
+        padding: 20px; /* Add padding for spacing */
+    }
+}
+
+/* Finance Section */
+@media (max-width: 768px) {
+    .finance-content {
+        flex-direction: column; /* Stack finance items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .finance-item {
+        width: 90%; /* Full width for smaller screens */
+        margin: 10px 0; /* Margin for spacing */
+    }
+}
+
+/* Features Section */
+@media (max-width: 768px) {
+    .feature-grid {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 90%; /* Full width for cards on smaller screens */
+        margin-bottom: 20px; /* Space between cards */
+    }
+}
+
+/* Carousel Controls */
+@media (max-width: 600px) {
+    .carousel-btn {
+        width: 15px; /* Smaller carousel buttons */
+        height: 15px; /* Smaller carousel buttons */
+    }
+}
+
+/* Footer Styles */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 14px; /* Adjust footer text size */
+    }
+}
+
+/* Mobile Menu */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: center; /* Center links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Space between navigation links */
+    }
+}
+
+
+/* Hamburger Button Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Align bars vertically */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Hamburger Bars */
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Nav List Styles */
+.nav-list {
+    display: flex; /* Flexbox for horizontal layout */
+    list-style-type: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between; /* Space between branding and nav */
+        align-items: center; /* Center items vertically */
+    }
+    
+    .nav-list {
+        display: none; /* Hide navigation by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position absolutely */
+        background-color: #5E716A; /* Match the header color */
+        top: 50px; /* Position below the header */
+        right: 0;
+        width: 200px; /* Set a width for the dropdown */
+        border-radius: 5px; /* Optional: round corners */
+        padding: 10px 0; /* Padding for spacing */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    }
+    
+    .nav-list li {
+        margin: 10px 0; /* Space between items */
+        text-align: center; /* Center text */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+}
+
+/* Show the nav-list when toggled */
+.nav-list.show {
+    display: flex; /* Show the navigation list */
+}

@@ -68,3 +68,6 @@ svg.selectAll("text")
     .attr("transform", d => `translate(${arc.centroid(d)})`)
     .attr("text-anchor", "middle")
     .text(d => `${d.data.sector}: ${d.data.value}B`);
+
+
+   

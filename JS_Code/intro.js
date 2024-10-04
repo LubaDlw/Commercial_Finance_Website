@@ -1,4 +1,6 @@
 // Array of background images and applicable text
+
+
 const slides = [
     {
         background: "url('https://i.pinimg.com/564x/ab/15/09/ab1509a99863547aca3c4adf2d1cb178.jpg')",
@@ -19,6 +21,8 @@ const slides = [
         buttonText: "Learn More"
     }
 ];
+
+
 
 let currentSlideIndex = 0;
 
@@ -55,3 +59,4 @@ window.onload = updateSlide;
 document.querySelectorAll(".carousel-btn").forEach((btn, index) => {
     btn.addEventListener("click", () => goToSlide(index));
 });
+

@@ -6,28 +6,27 @@
     <title>Home | The South African Economy</title>
     <link rel="stylesheet" href="CSS_Code/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <meta name="description" content="Explore South Africa's economic insights with interactive data visualizations and latest news.">
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
+     <!-- Header and Navigation -->
+     <header>
         <div class="container">
-           
-           
             <div id="branding">
-                
-             
-                <h1>The South African Economy </h1> <br>
+                <h1>The South African Economy</h1>
+                <br>
                 <p>Your Source for Economic Insights and Data</p>
-                
             </div>
             <nav>
-                <ul>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list">
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="data.html">Economic Trends</a></li>
                     <li><a href="news.html">Economic News</a></li>
-                   
                     <li><a href="design.html">Design & Theory</a></li>
                 </ul>
             </nav>
@@ -37,131 +36,126 @@
     <!-- Main Content -->
     <main>
         <!-- Intro Section -->
-<section id="intro" style="background-size: cover; padding: 50px 0;">
-    <div class="container nav">
-        <h1 id="intro-heading">Welcome to The South African Economy</h1>
-        <p id="intro-description">
-            Explore detailed economic insights about South Africa with interactive data visualizations, up-to-date news, and expert analysis.
-        </p>
-        <a id="intro-button" href="#finance" class="button">Explore GDP Trends</a>
-        
-        <!-- Carousel Controls -->
-        <div class="carousel-controls">
-            <span class="carousel-btn"></span>
-            <span class="carousel-btn"></span>
-            <span class="carousel-btn"></span>
-        </div>
-    </div>
-</section>
-
-        
-<!-- Qoute Section -->
-<section id="quote">   
-    <div class="quote"> 
-        <h1>"The resilience of the South African economy is remarkable,
-            <br> and we have the ability to bounce back stronger." 
-            <br>
-        </h1> 
-        <p>Lesetja Kganyago - Governer of the South African Reserve Bank</p>
-     </div>
-</section>
-
- <!-- Overview of South African Finance -->
- <section class="finance-section" id="finance">
-    <h2>South African Finance Overview</h2>
-    <p>South Africa's economy is characterized by its diversity, strong financial sector, and rich resources, while also facing significant challenges ahead.</p>
-    <div class="finance-content">
-        <!-- Row 1 -->
-        <div class="finance-item">
-            <i class="fas fa-chart-line fa-3x"></i>
-            <h3>Diverse Economy</h3>
-            <p>South Africa boasts a diverse and dynamic economy, recognized as the most advanced on the African continent.</p>
-        </div>
-        <div class="finance-item">
-            <i class="fas fa-university fa-3x"></i>
-            <h3>Strong Financial Sector</h3>
-            <p>The financial sector is particularly strong, anchored by a robust banking system and a well-regulated stock exchange.</p>
-        </div>
-        <div class="finance-item">
-            <i class="fas fa-industry fa-3x"></i>
-            <h3>Resource Richness</h3>
-            <p>With rich natural resources and skilled workforce, South Africa drives growth and innovation.</p>
-        </div>
-        <!-- Row 2 -->
-        <div class="finance-item">
-            <i class="fas fa-exclamation-circle fa-3x"></i>
-            <h3>Challenges Ahead</h3>
-            <p>Despite challenges such as high unemployment rates and economic inequality, the country remains resilient.</p>
-        </div>
-        <div class="finance-item">
-            <i class="fas fa-globe-africa fa-3x"></i>
-            <h3>Global Trade</h3>
-            <p>South Africa is a key player in international trade, exporting a variety of goods worldwide.</p>
-        </div>
-        <div class="finance-item">
-            <i class="fas fa-users fa-3x"></i>
-            <h3>Skilled Workforce</h3>
-            <p>The country has a well-educated workforce, contributing to various sectors and economic growth.</p>
-        </div>
-    </div>
-</section>
-
-
-
-<section id="features">
-    <div class="container">
-        <h2>Features</h2>
-        <div class="feature-grid">
-            <div class="card">
-                <img src="https://i.pinimg.com/564x/5b/c9/65/5bc9655e32147807139d5d6636a84374.jpg" alt="GDP Trends" class="card-img">
-                <div class="card-content">
-                    <h3>Economic  <br> Trends</h3>
-                    <p>Analyze South Africa’s GDP growth over the years using our interactive charts and data visualizations.</p>
-                    <a href="data.html" class="button">Explore More</a>
+        <section id="intro" style="background-size: cover; padding: 50px 0;">
+            <div class="container nav">
+                <h1 id="intro-heading">Welcome to The South African Economy</h1>
+                <p id="intro-description">
+                    Explore detailed economic insights about South Africa with interactive data visualizations, up-to-date news, and expert analysis.
+                </p>
+                <a id="intro-button" href="#finance" class="button">Explore GDP Trends</a>
+                
+                <!-- Carousel Controls -->
+                <div class="carousel-controls">
+                    <span class="carousel-btn"></span>
+                    <span class="carousel-btn"></span>
+                    <span class="carousel-btn"></span>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://i.pinimg.com/564x/b1/75/40/b17540985ea2822f4347f3fbb0ff7197.jpg" alt="Economic News" class="card-img">
-                <div class="card-content">
-                    <h3>Economic  <br> News</h3>
-                    <p>Stay updated on the latest developments in South Africa’s economy with curated news and articles.</p>
-                    <a href="news.html" class="button">Read News</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://i.pinimg.com/564x/9b/80/ee/9b80ee3ee4ccec8295b6a32bd9625aaa.jpg" alt="Expert Insights" class="card-img">
-                <div class="card-content">
-                    <h3>Expert <br> Insights</h3>
-                    <p>Gain deeper understanding from expert analyses on the key economic indicators affecting South Africa.</p>
-                    <a href="data.html" class="button">Learn More</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://i.pinimg.com/736x/5d/aa/aa/5daaaacda6f2f3d2837cd981658318dc.jpg" alt="Expert Insights" class="card-img">
-                <div class="card-content">
-                    <h3>Website Design & Theory</h3>
-                    <p>"Discover how Lubabalo Dlwathi blends creativity and technology in website design, enhancing user engagement through strategic layouts and functionality."</p>
-                    <a href="design.html" class="button">Learn More</a>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-</section>
+        </section>
 
+        <!-- Quote Section -->
+        <section id="quote">   
+            <div class="quote"> 
+                <h1>"The resilience of the South African economy is remarkable,
+                    <br> and we have the ability to bounce back stronger." 
+                    <br>
+                </h1> 
+                <p>Lesetja Kganyago - Governor of the South African Reserve Bank</p>
+            </div>
+        </section>
 
-        
+        <!-- Overview of South African Finance -->
+        <section class="finance-section" id="finance">
+            <h2>South African Finance Overview</h2>
+            <p>South Africa's economy is characterized by its diversity, strong financial sector, and rich resources, while also facing significant challenges ahead.</p>
+            <div class="finance-content">
+                <!-- Row 1 -->
+                <div class="finance-item">
+                    <i class="fas fa-chart-line fa-3x"></i>
+                    <h3>Diverse Economy</h3>
+                    <p>South Africa boasts a diverse and dynamic economy, recognized as the most advanced on the African continent.</p>
+                </div>
+                <div class="finance-item">
+                    <i class="fas fa-university fa-3x"></i>
+                    <h3>Strong Financial Sector</h3>
+                    <p>The financial sector is particularly strong, anchored by a robust banking system and a well-regulated stock exchange.</p>
+                </div>
+                <div class="finance-item">
+                    <i class="fas fa-industry fa-3x"></i>
+                    <h3>Resource Richness</h3>
+                    <p>With rich natural resources and a skilled workforce, South Africa drives growth and innovation.</p>
+                </div>
+                <!-- Row 2 -->
+                <div class="finance-item">
+                    <i class="fas fa-exclamation-circle fa-3x"></i>
+                    <h3>Challenges Ahead</h3>
+                    <p>Despite challenges such as high unemployment rates and economic inequality, the country remains resilient.</p>
+                </div>
+                <div class="finance-item">
+                    <i class="fas fa-globe-africa fa-3x"></i>
+                    <h3>Global Trade</h3>
+                    <p>South Africa is a key player in international trade, exporting a variety of goods worldwide.</p>
+                </div>
+                <div class="finance-item">
+                    <i class="fas fa-users fa-3x"></i>
+                    <h3>Skilled Workforce</h3>
+                    <p>The country has a well-educated workforce, contributing to various sectors and economic growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/564x/5b/c9/65/5bc9655e32147807139d5d6636a84374.jpg" alt="GDP Trends" class="card-img">
+                        <div class="card-content">
+                            <h3>Economic <br> Trends</h3>
+                            <p>Analyze South Africa’s GDP growth over the years using our interactive charts and data visualizations.</p>
+                            <a href="data.html" class="button">Explore More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.pinimg.com/564x/b1/75/40/b17540985ea2822f4347f3fbb0ff7197.jpg" alt="Economic News" class="card-img">
+                        <div class="card-content">
+                            <h3>Economic <br> News</h3>
+                            <p>Stay updated on the latest developments in South Africa’s economy with curated news and articles.</p>
+                            <a href="news.html" class="button">Read News</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.pinimg.com/564x/9b/80/ee/9b80ee3ee4ccec8295b6a32bd9625aaa.jpg" alt="Expert Insights" class="card-img">
+                        <div class="card-content">
+                            <h3>Expert <br> Insights</h3>
+                            <p>Gain deeper understanding from expert analyses on the key economic indicators affecting South Africa.</p>
+                            <a href="data.html" class="button">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/5d/aa/aa/5daaaacda6f2f3d2837cd981658318dc.jpg" alt="Website Design & Theory" class="card-img">
+                        <div class="card-content">
+                            <h3>Website Design & Theory</h3>
+                            <p>"Discover how Lubabalo Dlwathi blends creativity and technology in website design, enhancing user engagement through strategic layouts and functionality."</p>
+                            <a href="design.html" class="button">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 The South African Economy | All Rights Reserved | Lubabalo Dlwathi 2546125</p>
-           
         </div>
     </footer>
+
+    <script src="JS_Code/news.js"></script>
     <script src="JS_Code/main.js"></script>
     <script src="JS_Code/intro.js"></script>
+    
+   
 </body>
 </html>

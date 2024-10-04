@@ -37,3 +37,27 @@
             border-radius: 8px;
             margin: 10px 0;
         }
+
+        .card-container {
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Space between cards */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin: 20px 0; /* Optional margin for spacing */
+        }
+        
+        .card {
+            flex: 1; /* Allow cards to grow equally */
+            min-width: 250px; /* Minimum width to maintain structure */
+            max-width: 30%; /* Limit width for larger screens */
+            margin: 10px; /* Space between cards */
+        }
+
+        #design img {
+            width: 100%; /* Adjust width to your preference */
+            max-width: 800px; /* Set a maximum width if needed */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Center the image */
+            margin: 0 auto; /* Center align the image */
+        }
+        
+        

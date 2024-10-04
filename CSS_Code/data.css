@@ -132,3 +132,61 @@
     border-radius: 8px; /* Optional for rounded corners */
 }
 
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    #chart {
+        width: 100%;
+        height: auto; /* Adjust height based on content */
+    }
+
+    #pie-chart {
+        width: 80%; /* Make pie chart responsive */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #trends-intro h1 {
+        font-size: 40px; /* Smaller heading on mobile */
+    }
+
+    #trends-intro p {
+        font-size: 20px; /* Smaller paragraph on mobile */
+    }
+
+    .explore-economy-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .explore-economy-text {
+        padding-right: 0; /* Remove right padding */
+        padding-bottom: 20px; /* Add bottom padding for spacing */
+    }
+
+    .explore-economy-image {
+        width: 100%; /* Full width on mobile */
+        text-align: center; /* Center image */
+    }
+
+    .content-card {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #trends-intro h1 {
+        font-size: 32px; /* Even smaller heading */
+    }
+
+    #trends-intro p {
+        font-size: 18px; /* Even smaller paragraph */
+    }
+
+    .button {
+        padding: 8px 15px; /* Smaller button padding */
+    }
+
+    .explore-economy-image img {
+        height: auto; /* Responsive image height */
+    }
+}

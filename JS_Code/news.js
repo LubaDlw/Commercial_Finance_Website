@@ -39,4 +39,10 @@ function displayNews(articles) {
 
 // Fetch news on page load
 fetchNews();
+// Toggle Navigation Menu
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
 
+hamburger.addEventListener('click', () => {
+    navList.classList.toggle('show'); // Toggle visibility
+});

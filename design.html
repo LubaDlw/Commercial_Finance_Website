@@ -6,29 +6,33 @@
     <title>Design & Theory | The South African Economy</title>
     <link rel="stylesheet" href="CSS_Code/styles.css">
     <link rel="stylesheet" href="CSS_Code/design.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="description" content="Explore the design and theory behind The South African Economy website, including wireframes, style guides, and data visualization insights.">
-    
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>The South African Economy</h1>
-                <p>Your Source for Economic Insights and Data</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="data.html">Economic Trends</a></li>
-                    <li><a href="news.html">Economic News</a></li>
-                    <li><a href="design.html" class="current">Design & Theory</a></li>
-                </ul>
-            </nav>
+      <!-- Header and Navigation -->
+   <header>
+    <div class="container">
+        <div id="branding">
+            <h1>The South African Economy</h1>
+            <br>
+            <p>Your Source for Economic Insights and Data</p>
         </div>
-    </header>
+        <nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="data.html">Economic Trends</a></li>
+                <li><a href="news.html">Economic News</a></li>
+                <li><a href="design.html">Design & Theory</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Main Content -->
     <main>
@@ -37,55 +41,94 @@
             <div class="container-branding">
                 <h2>Design Section</h2>
                 <p>This section contains wireframes and style guides for the site, reflecting rationales for all UI and UX decisions made.</p>
+                
                 <h3>Wireframes</h3>
-                <img src="path/to/wireframe-image.jpg" alt="Wireframe">
+                <img src="image/Wireframe Flowchart Whiteboard (5).png" alt="Wireframe">
+                <p>The wireframes illustrate the layout and structure of each page, focusing on user flow and ease of navigation. Each section is designed to guide the user seamlessly through the content, prioritizing essential information.</p>
+                
+                
                 <h3>Style Guide</h3>
-                <div class="card">
-                    <h4>Fonts</h4>
-                    <p>Arial, sans-serif</p>
-                </div>
-                <div class="card">
-                    <h4>Color Palette</h4>
-                    <ul>
-                        <li>Primary Color: <span style="color: #28a745;">#28a745</span></li>
-                        <li>Secondary Color: <span style="color: #5E716A;">#5E716A</span></li>
-                        <li>Background Color: <span style="color: #f8f9fa;">#f8f9fa</span></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h4>Button Styles</h4>
-                    <p>Rounded corners, green background with white text.</p>
-                </div>
+<div class="card-container"> <!-- New container for cards -->
+    <div class="card">
+        <h4>Fonts</h4>
+        <p>Arial, sans-serif – chosen for its readability and modern appearance, ensuring accessibility for all users.</p>
+    </div>
+    <div class="card">
+        <h4>Color Palette</h4>
+        <ul>
+            <li>Primary Color: <span style="color: #28a745;">#28a745</span> - symbolizes growth and prosperity, aligning with the site's focus on economic insights.</li>
+            <li>Secondary Color: <span style="color: #5E716A;">#5E716A</span> - complements the primary color, providing balance and a professional look.</li>
+            <li>Background Color: <span style="color: #f8f9fa;">#f8f9fa</span> - a neutral backdrop that enhances readability and content focus.</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h4>Button Styles</h4>
+        <p>Buttons feature rounded corners, a green background, and white text for visibility and user engagement. Hover effects change the background to a darker shade for interactivity.</p>
+    </div>
+</div>
+
+
                 <h3>Rationales</h3>
-                <p>Discuss the rationale behind your UI choices, such as accessibility considerations, responsive design strategies, and user-centric features.</p>
+                <p>The design decisions reflect a user-centered approach, with accessibility considerations including high contrast for readability and a responsive design to ensure usability on various devices. Key UI choices include:</p>
+                <ul>
+                    <li><strong>Navigation Structure:</strong> A clear and straightforward navigation bar ensures users can easily find relevant content.</li>
+                    <li><strong>Dynamic Backgrounds:</strong> Changing images related to South African landscapes enhance the visual appeal while maintaining user focus on the text.</li>
+                    <li><strong>Engagement Features:</strong> Interactive elements like charts and carousels provide users with dynamic ways to engage with economic data.</li>
+                </ul>
             </div>
         </section>
 
-        <!-- Theory Section -->
-        <section id="theory">
-            <div class="container-branding">
-                <h2>Theory Section</h2>
-                <p>This section contains the essay and preparatory work/rationales for the Data Visualisations, including independent research and reflections.</p>
+   <!-- Theory Section -->
+<section id="theory">
+    <div class="container-branding">
+        <h2>Theory Section</h2>
+        <p>This section contains the essay and preparatory work/rationales for the Data Visualisations, including independent research and reflections.</p>
+        
+        <div class="card-container"> <!-- New container for cards -->
+            <div class="card">
                 <h3>Data Visualisation Rationale</h3>
-                <div class="card">
-                    <p>Provide insights into why certain data visualisation methods were chosen, discussing their effectiveness and suitability for the target audience.</p>
-                </div>
-                <h3>Essay</h3>
-                <div class="card">
-                    <p>[Insert essay content here discussing the theoretical aspects of the data visualizations and your independent research findings.]</p>
-                </div>
-                <h3>Reflections</h3>
-                <div class="card">
-                    <p>Reflect on your design process and the learning outcomes from this project.</p>
-                </div>
+                <p>Data visualization methods were selected based on their effectiveness in conveying complex economic data. For instance, line charts were used for GDP trends to highlight changes over time, while pie charts illustrate proportions of different economic sectors, providing intuitive understanding for users.</p>
             </div>
-        </section>
+
+            <div class="card">
+                <h3>Essay</h3>
+                <p>[Insert essay content here discussing the theoretical aspects of the data visualizations and your independent research findings. Consider including references to data visualization principles and their impact on user comprehension.]</p>
+            </div>
+            
+            <div class="card">
+                <h3>Reflections</h3>
+                <p>Reflecting on the design process has highlighted the importance of user feedback in shaping the final product. Iterating on initial designs based on user testing has led to improved usability and satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <div class="container-branding">
+            <section id="resources">
+                <div class="container">
+                    <h2>Resources & Design Elements</h2>
+                    <p>Explore our design elements, including wireframes, essays, and additional resources that showcase the development of The South African Economy website.</p>
+                    <div class="resource-links">
+                        <ul>
+                            <li><a href="image/Wireframe Flowchart Whiteboard (5).png" target="_blank">View Wireframes</a></li>
+                            <li><a href="image/WSOA3029_Assignment 2_ Lubabalo Dlwathi (1).pdf" target="_blank">Data Visualization Researc Essay</a></li>
+                            <li><a href="path/to/your/style-guide.pdf" target="_blank">Access the Style Guide</a></li>
+                            <li><a href="path/to/your/data-visualization-research.pdf" target="_blank">Data Visualization Research</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        
     </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 The South African Economy | All Rights Reserved | Lubabalo Dlwathi 2546125</p>
     </footer>
+    <script src="JS_Code/news.js"></script>
     <script src="JS_Code/main.js"></script>
     <script src="JS_Code/intro.js"></script>
 </body>
