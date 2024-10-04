@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDP Trends | The South African Economy</title>
+    <link rel="stylesheet" href="CSS_Code/styles.css">
+    <link rel="stylesheet" href="CSS_Code/data.css">
+    
+    <meta name="description" content="Explore South Africa's GDP growth over the years through interactive data visualizations.">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>The South African Economy</h1> <br>
+                <p>Your Source for Economic Insights and Data</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="data.html">Economic Trends</a></li>
+                    <li><a href="news.html">Economic News</a></li>
+                    <li><a href="design.html">Design & Theory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Section -->
+        <section id="trends-intro" class="custom-background" style="padding: 50px 0;">
+            <div class="container nav">
+                <br>
+                <h1 id="trends-intro-heading">Explore South Africa's Economic Trends</h1>
+                <p id="trends-intro-description">
+                    Analyze historical data and discover key economic indicators that shape South Africa’s economic landscape.
+                    <br>
+                </p>
+                <a id="trends-intro-button" href="#gdp-trends" class="button">View Economic Trends</a>
+            </div>
+        </section>
+
+        <!-- Card 1 -->
+        <div class="content-card">  
+            <section id="gdp-trends">
+                <section class="finance-section" id="finance">
+                    <h2>South African Finance Overview</h2>
+                    <p>South Africa's economy is characterized by its diversity, strong financial sector, and rich resources, while also facing significant challenges ahead.</p>
+                    <div class="finance-content">
+                        <!-- Row 1 -->
+                        <div class="finance-item">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                            <h3>Understanding the South African Economy</h3>
+                            <p>The South African economy is a dynamic and complex landscape, characterized by its diverse industries and rich resources.
+                                As one of the most advanced economies in Africa, it serves as a critical hub for trade and investment on the continent.</p>
+                        </div>
+                        <div class="finance-item">
+                            <i class="fas fa-university fa-3x"></i>
+                            <h3>Challenges Faced</h3>
+                            <p>South Africa faces various challenges, including high unemployment rates, fluctuating inflation, and socio-economic inequalities.
+                                These challenges affect its overall growth trajectory and require careful attention from stakeholders.</p>
+                        </div>
+                        <div class="finance-item">
+                            <i class="fas fa-industry fa-3x"></i>
+                            <h3>Importance of Economic Indicators</h3>
+                            <p>Understanding these intricacies is essential for stakeholders ranging from policymakers to business leaders and investors.
+                                Our interactive charts and visualizations allow users to explore historical and current data, revealing patterns in GDP growth and inflation rates.</p>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="finance-item">
+                            <i class="fas fa-exclamation-circle fa-3x"></i>
+                            <h3>Interactive Charts</h3>
+                            <p>Our tools allow for in-depth exploration of the factors driving the economy, helping users navigate economic complexities 
+                                and inform their strategic decisions for future growth.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <!-- Content Card 2 -->
+        <div class="content-card">
+            <div class="container">
+                <div class="explore-economy-container">
+                    <div class="explore-economy-text">
+                        <div class="content-card">
+                        <h1>Explore Everything "Mzansi" Economy</h1>
+                        <p>The South African economy is shaped by diverse industries, abundant resources, and significant regional disparities. 
+                            As a key player in African trade, South Africa also faces economic hurdles such as high unemployment, inflationary pressures, and inequalities.
+                            This section provides an analysis of vital indicators like GDP, inflation, and employment, enabling users to better understand the economy's trajectory and challenges.
+                            Delving into this data through interactive charts helps users uncover the factors influencing economic shifts and make informed decisions for future growth.
+                        </p>
+                        </div>
+                    </div>
+                    <div class="explore-economy-image">
+                        <img src="https://i.pinimg.com/736x/4f/5e/9b/4f5e9ba2a74c1529447eab2d58cc2f4b.jpg" alt="South African Economy Image" />
+                    </div>
+                </div>
+                <div class="content-card"> <h1>South Africa GDP Over the Years</h1>
+                    <p>Interactive graph showing South Africa’s GDP trends from 2000 to 2021 based on World Bank data.</p>
+    
+                    <div id="chart"></div>
+                </div>
+                <div class="content-card">
+                    <h1>Sector-wise Breakdown of South Africa's GDP (2022)</h1>
+                <div id="pie-chart"></div> 
+                </div>
+
+                
+                
+                                <div class="content-card">
+                    <p>With a diverse range of industries contributing to South Africa's GDP, this chart provides a sector-wise breakdown, highlighting key areas of growth and challenges in recent years. 
+                        Understanding this distribution helps stakeholders make data-driven investment decisions across sectors, improving economic resilience and fostering sustainable growth.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="tooltip" class="tooltip"></div> <!-- Tooltip Div -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The South African Economy | All Rights Reserved | Lubabalo Dlwathi 2546125</p>
+        </div>
+    </footer>
+
+    <!-- D3.js GDP Chart Script -->
+    <script src="JS_Code/main.js"></script>
+    <script src="JS_Code/script.js"></script>
+</body>
+</html>

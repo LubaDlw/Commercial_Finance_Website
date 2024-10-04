@@ -1,0 +1,75 @@
+.news-article {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-article h3 {
+    font-size: 1.2em;
+}
+
+.news-article a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
+.news-article p {
+    font-size: 0.9em;
+}
+
+
+#news-container {
+    margin-top: 1em;
+}
+
+
+#news-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px; 
+    padding: 50px 0; 
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
+    color: white;
+    position: relative;
+    text-align: center; /* Center text */
+}
+
+/* Background for the news intro section */
+#news-intro.custom-background {
+    background-image: url('https://i.pinimg.com/564x/6c/74/1c/6c741c60bf84723ea1184eaf5bb19c59.jpg'); /* Replace with your desired background image URL */
+}
+
+#news-intro h1 {
+    font-size: 56px; /* Increase font size for heading */
+    margin-bottom: 20px;
+}
+
+#news-intro p {
+    font-size: 28px; /* Increase font size for description */
+    margin-bottom: 30px;  
+}
+
+#news-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark layer with 50% opacity */
+    z-index: 1; /* Ensure the overlay is on top of the background */
+}
+
+#news-intro h1, #news-intro p, .button, .container {
+    position: relative;
+    z-index: 2; /* Ensure text and content are above the overlay */
+}
