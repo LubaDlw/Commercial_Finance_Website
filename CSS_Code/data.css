@@ -14,15 +14,41 @@
     text-align: center;
 }
 
-#chart {
-    width: 1000px;
-    height: 400px;
+#chart, #pie-chart {
+    width: 100%;  /* Full width of the content card */
+    max-width: 100%;  /* Ensure they don't go beyond the container */
+    height: auto;  /* Maintain aspect ratio */
+    margin: 0 auto;  /* Center align */
 }
 
-#pie-chart {
-    margin: 0 auto;
-    width: 50%;
-    height: 500px;
+/* Ensure content-card has padding and is responsive */
+.content-card {
+    background: #d6e4d4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow: hidden; /* Prevent overflow */
+}
+
+@media only screen and (max-width: 768px) {
+    #chart, #pie-chart {
+        width: 100%;  /* Full width for mobile */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #chart, #pie-chart {
+        width: 100%;  /* Ensure charts fit within the content card */
+        max-width: 100%;  /* No larger than the content card */
+        height: auto;  /* Maintain aspect ratio */
+    }
+
+    /* Add padding to the content card on smaller screens */
+    .content-card {
+        padding: 15px;
+    }
 }
 
 #trends-intro.custom-background {
@@ -136,11 +162,12 @@
 @media only screen and (max-width: 1200px) {
     #chart {
         width: 100%;
-        height: auto; /* Adjust height based on content */
+       
     }
 
     #pie-chart {
         width: 80%; /* Make pie chart responsive */
+        
     }
 }
 
@@ -190,3 +217,4 @@
         height: auto; /* Responsive image height */
     }
 }
+
