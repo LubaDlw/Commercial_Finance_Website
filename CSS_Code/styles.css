@@ -190,7 +190,10 @@ h1 {
     transition: opacity 0.2s;
 }
 
+.content-card{
 
+    z-index: 0;
+}
 /* Finance Section Styles */
 .finance-section {
     background-color: #f8f8f8;
@@ -494,12 +497,17 @@ footer {
     background-color: white;
     margin: 3px 0;
     transition: all 0.3s ease;
+    z-index: 10;
+
 }
 
 /* Nav List Styles */
 .nav-list {
     display: flex; /* Flexbox for horizontal layout */
     list-style-type: none;
+    z-index: 10;
+
+    
 }
 
 /* Responsive Navigation */
@@ -521,6 +529,7 @@ footer {
         border-radius: 5px; /* Optional: round corners */
         padding: 10px 0; /* Padding for spacing */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        
     }
     
     .nav-list li {
@@ -536,6 +545,8 @@ footer {
 /* Show the nav-list when toggled */
 .nav-list.show {
     display: flex; /* Show the navigation list */
+    z-index: 20;
 }
+
 
 
