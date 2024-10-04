@@ -48,7 +48,7 @@ d3.json(url).then(data => {
 
     // Add Y axis
     svg.append("g")
-        .call(d3.axisLeft(y).tickFormat(d => d + "B")); // Add "B" to indicate billions
+        .call(d3.axisLeft(y).tickFormat(d => d + "B")); // Add "B" to show billions
 
     // Add Y axis label
     svg.append("text")

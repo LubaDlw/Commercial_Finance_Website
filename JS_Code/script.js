@@ -1,3 +1,4 @@
+//This was for testing purposes
 // Sample data representing the GDP distribution by sector (in billion USD)
 const gdpData = [
     { sector: 'Agriculture', value: 30 },
