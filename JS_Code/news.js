@@ -40,4 +40,3 @@ function displayNews(articles) {
 // Fetch news on page load
 fetchNews();
 
-
