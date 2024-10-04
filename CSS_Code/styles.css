@@ -190,10 +190,11 @@ h1 {
     transition: opacity 0.2s;
 }
 
-.content-card{
-
-    z-index: 0;
+h1:hover {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 /* Finance Section Styles */
 .finance-section {
     background-color: #f8f8f8;
