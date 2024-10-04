@@ -21,20 +21,21 @@
         </div>
         <nav>
             <button class="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar-pop"></span>
+                <span class="bar-pop"></span>
+                <span class="bar-pop"></span>
             </button>
             <ul class="nav-list">
                 <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="data.html">Economic Trends</a></li>
                 <li><a href="news.html">Economic News</a></li>
+                <li><a href="gdp.html">GDP Data</a></li>
+                <li><a href="test.html">Population Data</a></li>
                 <li><a href="design.html">Design & Theory</a></li>
             </ul>
         </nav>
     </div>
 </header>
-
 
     <!-- Main Content -->
     <main>
@@ -107,23 +108,34 @@
                         <img src="https://i.pinimg.com/736x/4f/5e/9b/4f5e9ba2a74c1529447eab2d58cc2f4b.jpg" alt="South African Economy Image" />
                     </div>
                 </div>
-                <div class="content-card"> <h1>South Africa GDP Over the Years</h1>
+                <div class="content-card"> 
+                    <h1>South Africa GDP Over the Years</h1>
                     <p>Interactive graph showing South Africa’s GDP trends from 2000 to 2021 based on World Bank data.</p>
     
                     <div id="chart"></div>
                 </div>
                 <div class="content-card">
                     <p>With a diverse range of industries contributing to South Africa's GDP, this chart provides a sector-wise breakdown, highlighting key areas of growth and challenges in recent years. 
-                        Understanding this distribution helps stakeholders make data-driven investment decisions across sectors, improving economic resilience and fostering sustainable growth.</p>
+                        Understanding this distribution helps stakeholders make data-driven investment decisions across sectors, improving economic resilience and fostering sustainable growth.
+                    </p>
                 </div>
                 
+                <!-- New Section 1 for Data Type -->
                 <div class="content-card">
-                    <h1>Sector-wise Breakdown of South Africa's GDP (2022)</h1>
-                <div id="pie-chart"></div> 
+                    <h1>Data Type Overview: GDP</h1>
+                    <p>This section covers the GDP data, illustrating economic growth trends over the years. Understanding GDP is crucial for grasping the overall economic health of South Africa.</p>
+                    <a href="gdp.html" class="button">View GDP Data Details</a>
+                    
                 </div>
 
-    
-                
+                <!-- New Section 2 for Data Type -->
+                <div class="content-card">
+                    <h1>Data Type Overview: Population Growth</h1>
+                    <p>This section focuses on population statistics. Understanding employment data is vital for addressing socio-economic challenges in South Africa.</p>
+                    <a href="test.html" class="button">View Employment Data Details</a>
+                    
+                </div>
+
             </div>
         </div>
 
@@ -140,5 +152,6 @@
     <!-- D3.js GDP Chart Script -->
     <script src="JS_Code/main.js"></script>
     <script src="JS_Code/script.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>

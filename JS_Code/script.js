@@ -6,8 +6,8 @@ const gdpData = [
 ];
 
 // Set dimensions for the pie chart
-const width = 500;
-const height = 500;
+const width = 300;
+const height = 300;
 const radius = Math.min(width, height) / 2;
 
 // Create an SVG element

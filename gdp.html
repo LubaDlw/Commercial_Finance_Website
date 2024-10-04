@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDP Trends | The South African Economy</title>
+    <link rel="stylesheet" href="CSS_Code/styles.css">
+    <link rel="stylesheet" href="CSS_Code/data.css">
+    
+    <meta name="description" content="Explore South Africa's GDP growth over the years through interactive data visualizations.">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+   <!-- Header and Navigation -->
+     <header>
+        <div class="container">
+            <div id="branding">
+                <h1>The South African Economy</h1>
+                <br>
+                <p>Your Source for Economic Insights and Data</p>
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar-pop"></span>
+                    <span class="bar-pop"></span>
+                    <span class="bar-pop"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="data.html">Economic Trends</a></li>
+                    <li><a href="news.html">Economic News</a></li>
+                    <li><a href="gdp.html">GDP Data</a></li>
+                    <li><a href="test.html">Population Data</a></li>
+                    <li><a href="design.html">Design & Theory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Content Card 2 -->
+        <div class="content-card">
+            <div class="container">
+                <div class="explore-economy-container">
+                    
+                    
+                </div>
+                <div class="content-card"> 
+                    <h1>South Africa GDP Over the Years</h1>
+                    <p>Interactive graph showing South Africa’s GDP trends from 2000 to 2021 based on World Bank data.</p>
+    
+                    <div id="chart"></div>
+                </div>
+                <div class="content-card">
+                    <p>With a diverse range of industries contributing to South Africa's GDP, this chart provides a sector-wise breakdown, highlighting key areas of growth and challenges in recent years. 
+                        Understanding this distribution helps stakeholders make data-driven investment decisions across sectors, improving economic resilience and fostering sustainable growth.
+                    </p>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div id="tooltip" class="tooltip"></div> <!-- Tooltip Div -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The South African Economy | All Rights Reserved | Lubabalo Dlwathi 2546125</p>
+        </div>
+    </footer>
+
+    <!-- D3.js GDP Chart Script -->
+    <script src="JS_Code/main.js"></script>
+    <script src="JS_Code/script.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
