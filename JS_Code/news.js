@@ -39,3 +39,6 @@ function displayNews(articles) {
 
 // Fetch news on page load
 fetchNews();
+
+<script src="JS_Code/news.js?v=1.0"></script>
+
