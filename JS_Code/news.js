@@ -1,4 +1,4 @@
-const apiKey = '1cc304960bd84f449819e54331741c78';
+const apiKey = '1cc304960bd84f449819e54331741c78'; //API KEY
 const newsContainer = document.getElementById('news-container');
 
 // Function to fetch news API
@@ -21,7 +21,7 @@ function displayNews(articles) {
         return;
     }
     
-    // Limit articles to 10 articles
+    // Limit articles to 10 articles to make page length appropriate
     const limitedArticles = articles.slice(0, 10);
 
     let newsHTML = '';
