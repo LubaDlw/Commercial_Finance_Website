@@ -56,7 +56,7 @@ d3.json(url).then(data => {
         .attr("text-anchor", "middle")
         .text("Population Growth (%)");
 
-    //  tooltip
+    //  tooltip to make graph interactive
     const tooltip = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);

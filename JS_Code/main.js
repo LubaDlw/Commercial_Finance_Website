@@ -8,7 +8,7 @@ d3.json(url).then(data => {
     // Extracting the relevant data
     const gdpData = data[1].map(d => ({
         year: +d.date,  // Convert year string to number
-        gdp: d.value / 1e9 // Convert GDP to billions by dividing by 1 billion (1e9)
+        gdp: d.value / 1e9 // Convert GDP to billions by dividing by 1 billion (1e9) to display values better
     })).filter(d => d.gdp !== null); // Filter out null values
 
     // Set dimensions and margins for the graph
