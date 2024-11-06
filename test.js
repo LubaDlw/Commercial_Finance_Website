@@ -1,4 +1,5 @@
 // Fetch population growth data from the World Bank API
+//This is for population Growth
 const url = 'https://api.worldbank.org/v2/country/ZAF/indicator/SP.POP.GROW?format=json';
 
 d3.json(url).then(data => {
