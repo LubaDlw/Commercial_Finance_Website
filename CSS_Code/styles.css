@@ -284,9 +284,12 @@ body, h1, p, ul, li, form, input, textarea {
 
 /* Header Styles */
 header {
-    background-color: #5E716A;;
-    color: white;
+    display: flex;
+    justify-content: space-between; /* Space between branding and nav */
+    align-items: center; /* Center items vertically */
     padding: 10px 0;
+    background-color: #5E716A;
+    color: white;
 }
 
 #branding {
