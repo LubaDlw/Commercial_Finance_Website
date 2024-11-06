@@ -122,7 +122,7 @@ h1 {
     max-width: 300px; /* Set a max-width for larger screens */
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
-
+/*  This is the clickable card in features*/
 .card:hover {
     transform: translateY(-10px); /* Move up slightly on hover */
 }
@@ -190,10 +190,6 @@ h1 {
     transition: opacity 0.2s;
 }
 
-h1:hover {
-    color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
 
 /* Finance Section Styles */
 .finance-section {
@@ -287,7 +283,7 @@ header {
     display: flex;
     justify-content: space-between; /* Space between branding and nav */
     align-items: center; /* Center items vertically */
-    padding: 10px 0;
+    padding: 1rem;
     background-color: #5E716A;
     color: white;
 }
@@ -295,7 +291,8 @@ header {
 #branding {
     display: inline-block;   
     margin-top: 20px;       
-    text-align: center;      
+    text-align: center;  
+        
 }
 #branding h1, #branding p {
     
@@ -306,6 +303,7 @@ header {
 nav ul {
     float: right;
     list-style-type: none;
+     display: inline;
 }
 
 nav ul li {

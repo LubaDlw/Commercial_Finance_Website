@@ -81,10 +81,7 @@
     z-index: 2;
 }
 
-#trends-intro h1:hover {
-    color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+
 
 #trends-intro p {
     line-height: 1.6;
