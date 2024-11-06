@@ -10,7 +10,7 @@ h1 {
 }
 
 #intro {
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;  /* Centers content vertically */
     align-items: center;  /* Centers content horizontally */
@@ -57,25 +57,40 @@ h1 {
 }
 
 /* Carousel Controls */
+
+
 .carousel-controls {
-    text-align: center;
-    margin-top: 50px; /* Increase margin for spacing */
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* Center arrows vertically */
+    z-index: 2;
 }
-
-.carousel-btn {
-    display: inline-block;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    width: 20px; /* Increase button size */
-    height: 20px; /* Increase button size */
-    margin: 0 10px;
+.carousel-arrow {
+    font-size: 30px;
+    color: white;
     cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
-.carousel-btn:hover {
-    background-color: #28a745;
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
+.carousel-arrow.left {
+    left: 20px;
+}
+
+.carousel-arrow.right {
+    right: 20px;
+}
+
+
 
 
 /* Qoute */

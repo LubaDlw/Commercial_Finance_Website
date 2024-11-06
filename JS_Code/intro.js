@@ -1,6 +1,4 @@
 // Array of background images and applicable text
-
-
 const slides = [
     {
         background: "url('https://i.pinimg.com/564x/ab/15/09/ab1509a99863547aca3c4adf2d1cb178.jpg')",
@@ -22,8 +20,6 @@ const slides = [
     }
 ];
 
-
-
 let currentSlideIndex = 0;
 
 // Function to update the background and text
@@ -33,7 +29,6 @@ function updateSlide() {
     const descriptionElement = document.getElementById("intro-description");
     const buttonElement = document.getElementById("intro-button");
 
-    //Below I go intothearray look for the current index and asign the applicablehtml element
     introSection.style.backgroundImage = slides[currentSlideIndex].background;
     headingElement.innerText = slides[currentSlideIndex].heading;
     descriptionElement.innerText = slides[currentSlideIndex].description;
@@ -46,6 +41,18 @@ function goToSlide(index) {
     updateSlide();
 }
 
+// Function to go to the previous slide
+function prevSlide() {
+    currentSlideIndex = (currentSlideIndex === 0) ? slides.length - 1 : currentSlideIndex - 1;
+    updateSlide();
+}
+
+// Function to go to the next slide
+function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    updateSlide();
+}
+
 // Automatically change background every 10 seconds
 setInterval(() => {
     currentSlideIndex = (currentSlideIndex + 1) % slides.length;
@@ -55,8 +62,11 @@ setInterval(() => {
 // Set initial background and text when the page loads
 window.onload = updateSlide;
 
-//  event listeners  carousel buttons
+// Event listeners for carousel arrow clicks
+document.querySelector('.carousel-arrow.left').addEventListener('click', prevSlide);
+document.querySelector('.carousel-arrow.right').addEventListener('click', nextSlide);
+
+// Event listeners for carousel buttons (if you still want them for manual navigation)
 document.querySelectorAll(".carousel-btn").forEach((btn, index) => {
     btn.addEventListener("click", () => goToSlide(index));
 });
-
