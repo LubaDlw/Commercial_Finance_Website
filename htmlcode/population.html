@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDP Trends | The South African Economy</title>
-    <link rel="stylesheet" href="CSS_Code/styles.css">
-    <link rel="stylesheet" href="CSS_Code/data.css">
+    <title>Population Trends | The South African Economy</title>
+    <link rel="stylesheet" href="/CSS_Code/styles.css">
+    <link rel="stylesheet" href="/CSS_Code/data.css">
+    <link rel="stylesheet" href="/CSS_Code/population.css">
     
     <meta name="description" content="Explore South Africa's GDP growth over the years through interactive data visualizations.">
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
-   <!-- Header and Navigation -->
-     <header>
+    <header>
         <div class="container">
             <div id="branding">
                 <h1>The South African Economy</h1>
@@ -30,7 +30,7 @@
                     <li><a href="data.html">Economic Trends</a></li>
                     <li><a href="news.html">Economic News</a></li>
                     <li><a href="gdp.html">GDP Data</a></li>
-                    <li><a href="test.html">Population Data</a></li>
+                    <li><a href="population.html">Population Data</a></li>
                     <li><a href="design.html">Design & Theory</a></li>
                 </ul>
             </nav>
@@ -42,24 +42,31 @@
 
         <!-- Content Card 2 -->
         <div class="content-card">
-           
+            
                 <div class="explore-economy-container">
                     
                     
                 </div>
                 <div class="content-card"> 
-                    <h1>South Africa GDP Over the Years</h1>
-                    <p>Interactive graph showing South Africa’s GDP trends from 2000 to 2021 based on World Bank data.</p>
+                    
+                    
     
-                    <div id="chart"></div>
+                    <div class="container">
+                        <h1><h1>Population Growth in South Africa (2000 - 2021)</h1>
+                    </h1>
+                    <p>This interactive graph illustrates South Africa’s population growth trends from 2000 to 2021 based on World Bank data. Understanding population dynamics is essential for evaluating economic health and planning for sustainable growth.</p>
+
+                        <svg id="population-chart" width="800" height="500"></svg>
+                    </div>
                 </div>
                 <div class="content-card">
-                    <p>With a diverse range of industries contributing to South Africa's GDP, this chart provides a breakdown, highlighting in recent years. 
-                        Understanding this helps stakeholders make data-driven investment decisions across , improving economic resilience and fostering sustainable growth.
-                    </p>
+                    <p>As South Africa's population continues to grow, it influences various sectors of the economy, impacting labor markets, resource allocation, and social services. This visualization provides critical insights into these trends and their implications for policymakers and businesses. By analyzing population growth, stakeholders can make informed decisions to address challenges such as urbanization, education, and healthcare, thereby fostering sustainable economic development.</p>
+
+                    
                 </div>
                 
-           
+                
+            
         </div>
 
         <div id="tooltip" class="tooltip"></div> <!-- Tooltip Div -->
@@ -73,8 +80,9 @@
     </footer>
 
     <!-- D3.js GDP Chart Script -->
-    <script src="JS_Code/main.js"></script>
-    <script src="JS_Code/script.js"></script>
-    <script src="test.js"></script>
+   
+    <script src="/JS_Code/script.js"></script>
+    <script src="/test.js"></script>
+    
 </body>
 </html>
