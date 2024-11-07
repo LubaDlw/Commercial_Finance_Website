@@ -234,9 +234,7 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.finance-item:hover {
-    transform: translateY(-5px); /* Slightly lift on hover */
-}
+
 
 .finance-item i {
     color: #28a745; /* Icon color to match the theme */
