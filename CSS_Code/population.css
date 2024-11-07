@@ -2,10 +2,7 @@
 
 
 
-h1 {
-    text-align: center;
-    
-}
+
 
 .bar {
     fill: steelblue;
@@ -36,9 +33,7 @@ body {
 
 
 
-h1 {
-    text-align: center;
-}
+
 
 #intro {
    display: flex;
@@ -87,41 +82,12 @@ h1 {
     
 }
 
-/* Carousel Controls */
-.carousel-controls {
-    text-align: center;
-    margin-top: 50px; /* Increase margin for spacing */
-}
 
-.carousel-btn {
-    display: inline-block;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    width: 20px; /* Increase button size */
-    height: 20px; /* Increase button size */
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.carousel-btn:hover {
-    background-color: #28a745;
-}
 
 
 /* Qoute */
 
-#quote{
-    background-color: #5E716A;
-    height: 200px;
-    color: #ddd;
-    position: relative;
-    justify-content: center;   /* Centers horizontally */
-    align-items: center;
-    text-align: center;
-    display: flex;     
-   
-}
+
 
 .container h2{
     color: #7f7f7a;
@@ -310,11 +276,7 @@ body, h1, p, ul, li, form, input, textarea {
 }
 
 /* Header Styles */
-header {
-    background-color: #5E716A;;
-    color: white;
-    padding: 10px 0;
-}
+
 
 #branding {
     display: inline-block;   
