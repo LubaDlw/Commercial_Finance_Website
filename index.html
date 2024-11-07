@@ -154,6 +154,32 @@
         </section>
     </main>
 
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="passwordError" class="error"></span>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <span id="phoneError" class="error"></span>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <span id="messageError" class="error"></span>
+
+        <button type="submit" class="button">Submit</button>
+        <p id="successMessage" class="success"></p>
+    </form>
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -164,6 +190,7 @@
     <script src="JS_Code/news.js"></script>
     <script src="JS_Code/main.js"></script>
     <script src="JS_Code/intro.js"></script>
+    <script src="/JS_Code/form.js"></script>
     
    
 </body>
