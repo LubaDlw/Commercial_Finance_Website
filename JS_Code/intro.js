@@ -66,7 +66,7 @@ window.onload = updateSlide;
 document.querySelector('.carousel-arrow.left').addEventListener('click', prevSlide);
 document.querySelector('.carousel-arrow.right').addEventListener('click', nextSlide);
 
-// Event listeners for carousel buttons (if you still want them for manual navigation)
+// Event listeners for carousel buttons 
 document.querySelectorAll(".carousel-btn").forEach((btn, index) => {
     btn.addEventListener("click", () => goToSlide(index));
 });
