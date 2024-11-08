@@ -656,3 +656,24 @@ form button:hover {
 
 
 
+/* Hide nav-list by default on smaller screens */
+.nav-list {
+    display: none;
+}
+
+.nav-list.nav-list-visible {
+    display: block;
+}
+
+/* Optional: animate the hamburger icon */
+.hamburger.active .bar-pop:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar-pop:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar-pop:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}

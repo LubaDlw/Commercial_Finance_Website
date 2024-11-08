@@ -36,4 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
             link.classList.add("active-page");
         }
     });
+
+    // Toggle navigation on hamburger click
+    const hamburger = document.querySelector(".hamburger");
+    const navList = document.querySelector(".nav-list");
+
+    hamburger.addEventListener("click", function() {
+        navList.classList.toggle("nav-list-visible");
+        hamburger.classList.toggle("active"); // Optional: animate the hamburger icon
+    });
 });
