@@ -76,14 +76,3 @@
     z-index: 2; /* Ensure text and content are above the overlay */
 }
 
-.container nav {
-    width: 80%;
-    margin: 0 auto;
-    height: 10px;
-    
-}
-
-.container{
-    width: 80%;
-    margin: 0 auto;
-}

@@ -507,6 +507,7 @@ footer {
     border: none;
     padding: 0;
     z-index: 10;
+    
 }
 
 /* Hamburger Bars */
@@ -564,7 +565,7 @@ footer {
 /* Show the nav-list when toggled */
 .nav-list.show {
     display: flex; /* Show the navigation list */
-    z-index: 20;
+    z-index: 50000;
 }
 
 
@@ -656,10 +657,7 @@ form button:hover {
 
 
 
-/* Hide nav-list by default on smaller screens */
-.nav-list {
-    display: none;
-}
+
 
 .nav-list.nav-list-visible {
     display: block;
