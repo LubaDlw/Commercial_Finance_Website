@@ -145,3 +145,73 @@ input {
     margin: 0 auto;
 }
 
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .book {
+        width: 400px;
+        height: 500px;
+    }
+
+    .page, .cover, .back-cover {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    /* Display only one page on smaller screens */
+    .page, .cover, .back-cover {
+        transform-origin: center;
+    }
+
+    /* Adjust page turn effects */
+    #checkbox-cover:checked ~ .book {
+        transform: translateX(0);
+    }
+
+    #checkbox-cover:checked ~ .book .cover {
+        transform: rotateY(-180deg);
+        z-index: 1;
+    }
+
+    #checkbox-page1:checked ~ .book #page1,
+    #checkbox-page2:checked ~ .book #page2 {
+        transform: rotateY(-180deg);
+        z-index: 1;
+    }
+
+    /* Reduce font size for readability on smaller screens */
+    .essay p {
+        font-size: 0.9rem;
+    }
+}
+
+/* For mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .book {
+        width: 350px;
+        height: 450px;
+    }
+
+    /* Adjust button sizes and font for small screens */
+    .next, .prev {
+        font-size: 1.5em;
+    }
+
+    .essay-card h1 {
+        font-size: 2rem;
+    }
+
+    /* Additional styling to improve readability on mobile */
+    .front-page, .back-page {
+        padding: 0.5rem;
+    }
+
+    .essay {
+        height: auto;
+        padding: 1rem;
+    }
+}
+
