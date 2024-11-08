@@ -151,7 +151,7 @@ input {
 /* For tablets and smaller screens */
 @media (max-width: 768px) {
     .book {
-        width: 400px;
+        width: 80%;
         height: 500px;
     }
 
@@ -191,7 +191,7 @@ input {
 /* For mobile screens (480px and below) */
 @media (max-width: 480px) {
     .book {
-        width: 350px;
+        width: 80%;
         height: 450px;
     }
 
