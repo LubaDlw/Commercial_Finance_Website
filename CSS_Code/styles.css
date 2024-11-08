@@ -524,7 +524,7 @@ footer {
 .nav-list {
     display: flex; /* Flexbox for horizontal layout */
     list-style-type: none;
-    z-index: 10;
+    z-index: 5000;
 
     
 }
