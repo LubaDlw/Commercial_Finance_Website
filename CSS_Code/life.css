@@ -1,0 +1,65 @@
+.life-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#chart {
+    margin-top: 20px;
+    width: 800px;
+    height: 500px;
+}
+
+.circle {
+    fill-opacity: 0.7;
+}
+
+.axis-label {
+    font-size: 14px;
+    fill: #333;
+}
+
+.infoBox {
+    position: absolute;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+    visibility: hidden;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #chart, #pie-chart {
+        width: 100%;  /* Full width for mobile */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #chart, #pie-chart {
+        width: 100%;  /* Ensure charts fit within the content card */
+        max-width: 100%;  /* No larger than the content card */
+        height: auto;  /* Maintain aspect ratio */
+    }
+
+    /* Add padding to the content card on smaller screens */
+    .content-card {
+        padding: 15px;
+    }
+
+    .axis-label {
+        font-size: 14px;
+        fill: #333;
+        align-items: center;
+        justify-content: center;
+    }
+}

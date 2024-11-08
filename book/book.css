@@ -82,29 +82,56 @@ p{
 	color: #fff;
 }
 #p1{
-    z-index: 9;
+    z-index: 20;
 }
 #p2{
-    z-index: 8;
+    z-index: 19;
 }
 #p3{
-    z-index: 7;
+    z-index: 18;
 }
 #p4{
-    z-index: 6;
+    z-index: 17;
 }
 #p5{
-    z-index: 5;
+    z-index: 16;
 }
 #p6{
-    z-index: 4;
+    z-index: 15;
 }
 #p7{
-    z-index: 3;
+    z-index: 14;
 }
 #p8{
-    z-index: 2;
+    z-index: 13;
 }
+
+/* New CSS for Pages 9-18 */
+#p9{ z-index: 12; }
+#p10{ z-index: 11; }
+#p11{ z-index: 10; }
+#p12{ z-index: 9; }
+#p13{ z-index: 8; }
+#p14{ z-index: 7; }
+#p15{ z-index: 6; }
+#p16{ z-index: 5; }
+#p17{ z-index: 4; }
+#p18{ z-index: 3; }
+#p19{ z-index: 2; }
+#p20{ z-index: 1; }
+
+#c9:checked ~ .flip-book #p9{ transform: rotateY(-180deg); z-index: 9; }
+#c10:checked ~ .flip-book #p10{ transform: rotateY(-180deg); z-index: 10; }
+#c11:checked ~ .flip-book #p11{ transform: rotateY(-180deg); z-index: 11; }
+#c12:checked ~ .flip-book #p12{ transform: rotateY(-180deg); z-index: 12; }
+#c13:checked ~ .flip-book #p13{ transform: rotateY(-180deg); z-index: 13; }
+#c14:checked ~ .flip-book #p14{ transform: rotateY(-180deg); z-index: 14; }
+#c15:checked ~ .flip-book #p15{ transform: rotateY(-180deg); z-index: 15; }
+#c16:checked ~ .flip-book #p16{ transform: rotateY(-180deg); z-index: 16; }
+#c17:checked ~ .flip-book #p17{ transform: rotateY(-180deg); z-index: 17; }
+#c18:checked ~ .flip-book #p18{ transform: rotateY(-180deg); z-index: 18; }
+#c19:checked ~ .flip-book #p19{ transform: rotateY(-180deg); z-index: 19; }
+#c20:checked ~ .flip-book #p20{ transform: rotateY(-180deg); z-index: 20; }
 
 #c1:checked ~ .flip-book #p1{
     transform: rotateY(-180deg);

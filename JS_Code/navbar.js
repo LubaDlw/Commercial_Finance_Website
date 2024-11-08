@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="../htmlcode/news.html">News</a></li>
                     <li><a href="../htmlcode/gdp.html">GDP Data</a></li>
                     <li><a href="../htmlcode/population.html">Population Data</a></li>
+                     <li><a href="../htmlcode/life.html">Life  Data</a></li>
                     <li><a href="../htmlcode/design.html">Design & Theory</a></li>
                     <li><a href ="../book/book.html">Essay</a></li>
                 </ul>
