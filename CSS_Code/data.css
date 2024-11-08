@@ -14,6 +14,19 @@
     text-align: center;
 }
 
+
+.container nav {
+    width: 80%;
+    margin: 0 auto;
+    height: 10px;
+    
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
 #chart, #pie-chart {
     width: 100%;  /* Full width of the content card */
     max-width: 100%;  /* Ensure they don't go beyond the container */
